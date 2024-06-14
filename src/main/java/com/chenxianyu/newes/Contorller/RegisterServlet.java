@@ -2,6 +2,7 @@ package com.chenxianyu.newes.Contorller;
 
 import com.chenxianyu.newes.Pojo.User;
 import com.chenxianyu.newes.Service.UserService;
+import com.chenxianyu.newes.Utils.BaseServlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 @WebServlet(urlPatterns = "/register")
-public class RegisterServlet extends HttpServlet {
+public class RegisterServlet extends BaseServlet {
     //注册
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

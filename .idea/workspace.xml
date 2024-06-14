@@ -9,10 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="封装统一返回类和Gson,使代码更简洁">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Utils/RequestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="封装参数接收相关代码">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Utils/BaseServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/GetUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/GetUserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/LoginServet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/LoginServet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UpdatePasswordServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UpdatePasswordServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +94,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.chenxianyu.newes.Utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Newes\src\main\java\com\chenxianyu\newes\Pojo" />
     </key>
@@ -286,7 +291,7 @@
       <workItem from="1718271913579" duration="1171000" />
       <workItem from="1718342891412" duration="531000" />
       <workItem from="1718343435728" duration="16916000" />
-      <workItem from="1718365982667" duration="7665000" />
+      <workItem from="1718365982667" duration="8428000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />
@@ -344,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718370649645</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="封装参数接收相关代码">
+      <option name="closed" value="true" />
+      <created>1718373926890</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718373926890</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +371,8 @@
     <MESSAGE value="更新测试" />
     <MESSAGE value="引入Gson，以便传输对象。设计统一回复类" />
     <MESSAGE value="封装统一返回类和Gson,使代码更简洁" />
-    <option name="LAST_COMMIT_MESSAGE" value="封装统一返回类和Gson,使代码更简洁" />
+    <MESSAGE value="封装参数接收相关代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="封装参数接收相关代码" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
