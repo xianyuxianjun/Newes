@@ -2,6 +2,7 @@ package com.chenxianyu.newes.Contorller;
 
 import com.chenxianyu.newes.Pojo.Result;
 import com.chenxianyu.newes.Service.UserService;
+import com.chenxianyu.newes.Utils.Res;
 import com.google.gson.Gson;
 
 import javax.servlet.ServletException;
@@ -20,17 +21,11 @@ public class LoginServet extends HttpServlet {
         UserService userService = new UserService();
         if (userService.login(username, password)) {
             // 登录成功
-            Result result = Result.success();
-            Gson gson = new Gson();
-            String resultJson = gson.toJson(result);
-            resp.getWriter().write(resultJson);
+            Res.success(resp);
             System.out.println("登录成功");
         } else {
             // 登录失败
-            Result result = Result.error("Login failed");
-            Gson gson = new Gson();
-            String resultJson = gson.toJson(result);
-            resp.getWriter().write(resultJson);
+            Res.error(resp, "Login failed");
             System.out.println("登录失败");
         }
     }
