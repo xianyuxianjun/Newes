@@ -96,6 +96,25 @@ public class UserMapperImpl implements UserMapper {
             return 0;
         }
     }
+
+    /**
+     * 获取用户总数。
+     *
+     * @return 返回用户总数
+     */
+    @Override
+    public int getUserCount() {
+        try {
+            return queryRunner.query("SELECT COUNT(*) FROM user", resultSet -> {
+                resultSet.next();
+                return resultSet.getInt(1);
+            });
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
     /**
      * 更新用户的密码。
      *
@@ -114,13 +133,4 @@ public class UserMapperImpl implements UserMapper {
         }
     }
 
-    @Override
-    public String chaxunmima(String username) {
-        return "";
-    }
-
-    @Override
-    public int zhuce(User user) {
-        return 1;
-    }
 }

@@ -41,18 +41,14 @@ public class UserService {
 
     /**
      * 修改密码
-     * @param userId 用户的ID
-     * @param password 新密码
-     * @return 修改成功返回true 失败返回false
      */
-    public boolean updatePassword(int userId, String password) {
-        int num = userMapper.updatePassword(userId, password);
-        if (num == 1){
+    public boolean updatePassword(int userId, String newPassword) {
+        int num = userMapper.updatePassword(userId, newPassword);
+        if (num == 1) {
             return true;
         }
         return false;
     }
-
     /**
      * 删除用户
      * @param userId 用户的ID
@@ -66,35 +62,21 @@ public class UserService {
 //        return false;
 //    }
 
-
     /**
      * 修改用户信息
-     * @param user 用户的更新信息
-     * @return 删除成功返回true 失败返回false
+     * @return 修改成功返回true 失败返回false
+     * @param user 用户对象
      */
-    public boolean updateUserInfo(User user) {
-       int num = userMapper.updateUser(user);
-       if (num == 1){
-           return true;
-       }
-       return false;
-    }
-
-    public boolean denglu(String username, String password) {
-        String password1 = userMapper.chaxunmima(username);
-        if (password1.equals(password)){
-            return true;
-        }else {
+     public boolean updateUser(User user){
+            int num = userMapper.updateUser(user);
+            if (num == 1) {
+                return true;
+            }
             return false;
         }
-    }
 
-    public boolean zhuce(User user) {
-        int num = userMapper.zhuce(user);
-        if (num == 1){
-            return true;
-        }else {
-            return false;
-        }
+    public User getUser(int id) {
+        return userMapper.getUserById(id);
     }
 }
+

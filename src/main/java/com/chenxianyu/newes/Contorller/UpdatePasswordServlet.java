@@ -1,8 +1,5 @@
 package com.chenxianyu.newes.Contorller;
 
-import com.chenxianyu.newes.Dao.Impl.UserMapperImpl;
-import com.chenxianyu.newes.Dao.UserMapper;
-import com.chenxianyu.newes.Pojo.User;
 import com.chenxianyu.newes.Service.UserService;
 
 import javax.servlet.ServletException;
@@ -11,23 +8,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class LoginServlet extends HttpServlet {
-    //登录
-
+public class UpdatePasswordServlet extends HttpServlet {
+    //修改密码
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //获取用户名和密码
-        String username = req.getParameter("username");
+        //获取用户信息
+        int id  = Integer.parseInt(req.getParameter("username"));
         String password = req.getParameter("password");
         UserService userService = new UserService();
-        //调用service层的login方法
-        boolean login = userService.login(username, password);
-        if (login) {
-            //登录成功
-            req.getRequestDispatcher("/index.jsp").forward(req, resp);
-        } else {
-            //登录失败
+        //调用service层的updatePassword方法
+        boolean updatePassword = userService.updatePassword(id, password);
+        if (updatePassword) {
+            //修改密码成功
             req.getRequestDispatcher("/login.jsp").forward(req, resp);
+        } else {
+            //修改密码失败
+            req.getRequestDispatcher("/updatePassword.jsp").forward(req, resp);
         }
     }
 }

@@ -45,11 +45,19 @@ public interface UserMapper {
     int deleteUser(int id);
 
     /**
-     * 修改密码
+     * 获取用户总数。
+     *
+     * @return 返回用户总数
+     */
+    int getUserCount();
+
+    /**
+     * 更新用户密码。
+     *
+     * @param userId 用户ID
+     * @param newPassword 新密码
+     * @return 返回受影响的行数，通常为1表示更新成功
      */
     int updatePassword(int userId, String newPassword);
 
-    String chaxunmima(String username);
-
-    int zhuce(User user);
 }

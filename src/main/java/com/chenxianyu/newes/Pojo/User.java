@@ -1,10 +1,15 @@
 package com.chenxianyu.newes.Pojo;
 public class User {
+    /* 户信息包括：昵称、姓名、年龄、性别、手机号、爱好； */
     private Integer id;
     private String username;
     private String password;
     private String name;
     private Integer age;
+    private String gender;
+    private String phone;
+    private String like;
+    private Integer type;
 
     public String getName() {
         return name;
@@ -46,12 +51,7 @@ public class User {
         this.like = like;
     }
 
-    private String gender;
-    private String phone;
-    private String like;
-    private Integer type;
-
-    public User(String username, String password) {
+    public User(String username, String password, String name, String age, String gender, String phone, String like) {
     }
 
     public Integer getId() {
