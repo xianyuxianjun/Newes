@@ -9,9 +9,10 @@
 <html>
 <head>
     <title>login</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-<form action="login" method="post">
+<form action="/login" method="post">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required>
     <br/>
@@ -27,18 +28,13 @@
         e.preventDefault();
         const username = document.querySelector('#username').value;
         const password = document.querySelector('#password').value;
-        axios.post('login', {
+        axios.post('/Newes_war_exploded/login', {
             username: username,
             password: password
-        }).then(function (response) {
-            console.log(response);
-            if (response.data === 'success') {
-                window.location.href = 'index.jsp';
-            } else {
-                alert('Login failed');
-            }
-        }).catch(function (error) {
-            console.log(error);
+        }).then(res => {
+            console.log(res);
+        }).catch(err => {
+            console.error(err);
         });
     });
 </script>
