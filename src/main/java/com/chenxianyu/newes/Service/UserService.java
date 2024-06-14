@@ -75,6 +75,11 @@ public class UserService {
             return false;
         }
 
+    /**
+     * 获取用户
+     * @param id
+     * @return
+     */
     public User getUser(int id) {
         return userMapper.getUserById(id);
     }

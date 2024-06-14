@@ -2,9 +2,11 @@ package com.chenxianyu.newes.Dao.Impl;
 
 import com.chenxianyu.newes.Dao.UserMapper;
 import com.chenxianyu.newes.Pojo.User;
+import com.chenxianyu.newes.Utils.DataSourceFactory;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 
+import javax.sql.DataSource;
 import java.sql.SQLException;
 
 public class UserMapperImpl implements UserMapper {
@@ -13,8 +15,8 @@ public class UserMapperImpl implements UserMapper {
     /**
      * 构造函数，初始化 QueryRunner 实例。
      */
-    public UserMapperImpl() {
-        queryRunner = new QueryRunner();
+    public UserMapperImpl( ) {
+        this.queryRunner = new QueryRunner(DataSourceFactory.getDataSource());
     }
 
     /**
