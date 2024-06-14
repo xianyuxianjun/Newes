@@ -9,17 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="用户的登录注册修改查询">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Text/Text.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Utils/DataSourceFactory.java" afterDir="false" />
+    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="测试成功">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chenxianyu/newes/Text/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Text/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Text/Text.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +69,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "F:/Newes/src/test/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -225,7 +220,7 @@
       <updated>1718271913101</updated>
       <workItem from="1718271913579" duration="1171000" />
       <workItem from="1718342891412" duration="531000" />
-      <workItem from="1718343435728" duration="8953000" />
+      <workItem from="1718343435728" duration="10350000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />
@@ -243,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718346638822</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="测试成功">
+      <option name="closed" value="true" />
+      <created>1718354454173</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718354454173</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +255,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化" />
     <MESSAGE value="用户的登录注册修改查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户的登录注册修改查询" />
+    <MESSAGE value="测试成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试成功" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
