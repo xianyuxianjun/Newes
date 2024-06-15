@@ -1,0 +1,1 @@
+let api ="http://localhost:8080/Newes_war_exploded/";

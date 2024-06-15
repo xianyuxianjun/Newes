@@ -5,8 +5,6 @@ import com.chenxianyu.newes.Pojo.User;
 import com.chenxianyu.newes.Utils.DataSourceFactory;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
-
-import javax.sql.DataSource;
 import java.sql.SQLException;
 
 public class UserMapperImpl implements UserMapper {
@@ -60,7 +58,14 @@ public class UserMapperImpl implements UserMapper {
     @Override
     public int createUser(User user) {
         try {
-            return queryRunner.update("INSERT INTO user (username, password) VALUES (?, ?)", user.getUsername(), user.getPassword());
+            return queryRunner.update("INSERT INTO user(username, password, name, age, gender, phone, `like`) VALUES(?,?,?,?,?,?,?)" ,
+                    user.getUsername(),
+                    user.getPassword(),
+                    user.getName(),
+                    user.getAge(),
+                    user.getGender(),
+                    user.getPhone(),
+                    user.getLike());
         } catch (SQLException e) {
             e.printStackTrace();
             return 0;
