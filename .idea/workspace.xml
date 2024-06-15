@@ -9,22 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="抽象Servlet公共代码">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/ArticleTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/Media.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/Tag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/UserRole.java" afterDir="false" />
+    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="数据库表，pojo">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/ArcitleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/ArcitleMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chenxianyu/newes/Text/UpdatePasswordServletTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/LoginServet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/LoginServet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Utils/RequestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Utils/RequestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/GetUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/GetUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UpdatePasswordServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UpdatePasswordServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Text/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Text/Text.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/chenxianyu/newes/Text/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chenxianyu/newes/Text/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -70,39 +66,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP 请求.generated-requests | #2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP 请求.generated-requests | #3.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 调试.login.jsp.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.Text.test.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Text.test1.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Text.test2.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Text.test3.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat 服务器.Tomcat 8.5.100.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat 服务器.login.jsp.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;F:/Newes/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Newes/src/main/java/com/chenxianyu/newes/Pojo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.Text.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP 请求.generated-requests | #2.executor": "Run",
+    "HTTP 请求.generated-requests | #3.executor": "Run",
+    "JUnit.UpdatePasswordServletTest.doPost.executor": "Run",
+    "JavaScript 调试.login.jsp.executor": "Run",
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.Text.test.executor": "Run",
+    "TestNG.Text.test1.executor": "Run",
+    "TestNG.Text.test2.executor": "Run",
+    "TestNG.Text.test3.executor": "Run",
+    "Tomcat 服务器.Tomcat 8.5.100.executor": "Run",
+    "Tomcat 服务器.login.jsp.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "F:/Newes/src/test/java",
+    "last_opened_file_path": "F:/Newes/src/main/java/com/chenxianyu/newes/Pojo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.Text.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.chenxianyu.newes.Utils" />
@@ -113,13 +113,35 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Newes\src\main\webapp" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.chenxianyu.newes.Text" />
+    </key>
   </component>
-  <component name="RunManager" selected="Tomcat 服务器.Tomcat 8.5.100">
+  <component name="RunManager" selected="JUnit.UpdatePasswordServletTest.doPost">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="运行单个请求">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="运行单个请求">
       <method v="2" />
+    </configuration>
+    <configuration name="UpdatePasswordServletTest.doPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Newes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chenxianyu.newes.Text.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Text" />
+      <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Text.UpdatePasswordServletTest" />
+      <option name="METHOD_NAME" value="doPost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Text.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Newes" />
@@ -132,24 +154,6 @@
       <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Text" />
       <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Text.Text" />
       <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Text.test2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Newes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chenxianyu.newes.Text.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Text" />
-      <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Text.Text" />
-      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -267,18 +271,18 @@
     <list>
       <item itemvalue="HTTP 请求.generated-requests | #2" />
       <item itemvalue="HTTP 请求.generated-requests | #3" />
+      <item itemvalue="JUnit.UpdatePasswordServletTest.doPost" />
       <item itemvalue="TestNG.Text.test1" />
-      <item itemvalue="TestNG.Text.test2" />
       <item itemvalue="TestNG.Text.test3" />
       <item itemvalue="Tomcat 服务器.Tomcat 8.5.100" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UpdatePasswordServletTest.doPost" />
         <item itemvalue="HTTP 请求.generated-requests | #2" />
         <item itemvalue="TestNG.Text.test1" />
         <item itemvalue="HTTP 请求.generated-requests | #3" />
         <item itemvalue="TestNG.Text.test3" />
-        <item itemvalue="TestNG.Text.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +306,7 @@
       <workItem from="1718342891412" duration="531000" />
       <workItem from="1718343435728" duration="16916000" />
       <workItem from="1718365982667" duration="8866000" />
-      <workItem from="1718425363644" duration="2877000" />
+      <workItem from="1718425363644" duration="4953000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />
@@ -376,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718374498597</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="数据库表，pojo">
+      <option name="closed" value="true" />
+      <created>1718428763546</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718428763546</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +404,8 @@
     <MESSAGE value="封装统一返回类和Gson,使代码更简洁" />
     <MESSAGE value="封装参数接收相关代码" />
     <MESSAGE value="抽象Servlet公共代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="抽象Servlet公共代码" />
+    <MESSAGE value="数据库表，pojo" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据库表，pojo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

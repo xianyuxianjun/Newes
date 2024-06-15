@@ -37,7 +37,7 @@ class UserServiceTest {
     @Test
     void updateUser() {
         User user = new User();
-        user.setId(1);
+        user.setUserId(1);
         user.setUsername("updateduser");
         assertTrue(userService.updateUser(user));
     }
@@ -46,6 +46,6 @@ class UserServiceTest {
     void getUser() {
         User user = userService.getUser(1);
         assertNotNull(user);
-        assertEquals(1, user.getId());
+        assertEquals(1, user.getUserId());
     }
 }

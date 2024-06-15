@@ -37,7 +37,7 @@ public class Text {
     public void test2() {
         UserService userService = new UserService();
         User user = new User();
-        user.setId(1);
+        user.setUserId(1);
         user.setUsername("updateduser");
         System.out.println(userService.updateUser(user));
     }
