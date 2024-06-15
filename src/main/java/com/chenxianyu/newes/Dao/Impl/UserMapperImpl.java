@@ -22,13 +22,13 @@ public class UserMapperImpl implements UserMapper {
     /**
      * 根据用户ID查询用户信息。
      *
-     * @param id 用户ID
+     * @param userId 用户ID
      * @return 返回对应的用户对象，如果不存在则返回null
      */
     @Override
-    public User getUserById(int id) {
+    public User getUserById(int userId) {
         try {
-            return queryRunner.query("SELECT * FROM user WHERE id=?", new BeanHandler<>(User.class), id);
+            return queryRunner.query("SELECT * FROM user WHERE user_id=?", new BeanHandler<>(User.class),userId);
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
@@ -76,7 +76,7 @@ public class UserMapperImpl implements UserMapper {
     @Override
     public int updateUser(User user) {
         try {
-            return queryRunner.update("UPDATE user SET username=?, password=? WHERE id=?", user.getUsername(), user.getPassword(), user.getId());
+            return queryRunner.update("UPDATE user SET username=?, password=? WHERE id=?", user.getUsername(), user.getPassword(), user.getUserId());
         } catch (SQLException e) {
             e.printStackTrace();
             return 0;

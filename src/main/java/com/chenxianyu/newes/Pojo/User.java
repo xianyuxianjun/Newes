@@ -1,7 +1,7 @@
 package com.chenxianyu.newes.Pojo;
 
 public class User {
-    private Integer id;
+    private Integer userId;
     private String username;
     private String password;
     private String name;
@@ -10,19 +10,22 @@ public class User {
     private String phone;
     private String like;
     private Integer type;
+    private String avatar;
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+
 
     public User() {
     }
 
     public User(String username, String password, String name, String age, String gender, String phone, String like) {
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getUsername() {
@@ -87,5 +90,13 @@ public class User {
 
     public void setType(Integer type) {
         this.type = type;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 }

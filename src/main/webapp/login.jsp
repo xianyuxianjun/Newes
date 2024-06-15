@@ -10,6 +10,43 @@
 <head>
     <title>login</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            background-color: #007BFF;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 <form action="/login" method="post">
@@ -32,7 +69,15 @@
             username: username,
             password: password
         }).then(res => {
-            console.log(res);
+            if (res.data.code==1){
+                alert('登录成功');
+                window.location.href = '/Newes_war_exploded/index.jsp';
+            }else{
+                alert('登录失败');
+                //清空输入框
+                document.querySelector('#username').value = '';
+                document.querySelector('#password').value = '';
+            }
         }).catch(err => {
             console.error(err);
         });

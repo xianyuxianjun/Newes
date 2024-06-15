@@ -1,21 +1,13 @@
 package com.chenxianyu.newes.Contorller;
-
-import com.chenxianyu.newes.Pojo.Result;
 import com.chenxianyu.newes.Pojo.User;
-import com.chenxianyu.newes.Service.UserService;
 import com.chenxianyu.newes.Utils.BaseServlet;
 import com.chenxianyu.newes.Utils.RequestUtils;
 import com.chenxianyu.newes.Utils.Res;
-import com.google.gson.Gson;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Map;
-
 @WebServlet(urlPatterns = "/login")
 public class LoginServet extends BaseServlet {
     @Override
