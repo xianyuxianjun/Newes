@@ -1,8 +1,7 @@
 package com.chenxianyu.newes.Contorller;
 
 import com.chenxianyu.newes.Pojo.User;
-import com.chenxianyu.newes.Service.UserService;
-import com.chenxianyu.newes.Utils.BaseServlet;
+import com.chenxianyu.newes.Utils.UserServlet;
 import com.chenxianyu.newes.Utils.RequestUtils;
 import com.chenxianyu.newes.Utils.Res;
 
@@ -11,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class UpdatePasswordServlet extends BaseServlet {
+public class UpdatePasswordServlet extends UserServlet {
     //修改密码
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
