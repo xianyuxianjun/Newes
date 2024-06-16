@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="登录注册界面">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/login.png" afterDir="false" />
+    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="首页">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/背景视频.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,53 +62,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP 请求.generated-requests | #2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP 请求.generated-requests | #3.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UpdatePasswordServletTest.doPost.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 调试.login.jsp.executor&quot;: &quot;Run&quot;,
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.Text.test.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Text.test1.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Text.test2.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Text.test3.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat 服务器.Tomcat 8.5.100.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat 服务器.login.jsp.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;F:/Newes/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Newes/src/main/webapp/Newes_war_exploded&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.Text.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP 请求.generated-requests | #2.executor": "Run",
+    "HTTP 请求.generated-requests | #3.executor": "Run",
+    "JUnit.UpdatePasswordServletTest.doPost.executor": "Run",
+    "JavaScript 调试.login.jsp.executor": "Run",
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.Text.test.executor": "Run",
+    "TestNG.Text.test1.executor": "Run",
+    "TestNG.Text.test2.executor": "Run",
+    "TestNG.Text.test3.executor": "Run",
+    "Tomcat 服务器.Tomcat 8.5.100.executor": "Run",
+    "Tomcat 服务器.login.jsp.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "F:/Newes/src/test/java",
+    "last_opened_file_path": "F:/Newes/src/main/webapp/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.Text.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.chenxianyu.newes.Utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Newes\src\main\webapp\Newes_war_exploded" />
       <recent name="F:\Newes\src\main\webapp\img" />
+      <recent name="F:\Newes\src\main\webapp\Newes_war_exploded" />
       <recent name="F:\Newes\src\main\java\com\chenxianyu\newes\Pojo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Newes\src\main\webapp\img" />
       <recent name="F:\Newes\src\main\webapp" />
       <recent name="F:\Newes\src\main\webapp\WEB-INF" />
     </key>
@@ -310,7 +310,8 @@
       <workItem from="1718453583565" duration="1661000" />
       <workItem from="1718455504458" duration="116000" />
       <workItem from="1718456006224" duration="96000" />
-      <workItem from="1718456282069" duration="529000" />
+      <workItem from="1718456282069" duration="834000" />
+      <workItem from="1718515222969" duration="8532000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />
@@ -416,11 +417,30 @@
       <option name="project" value="LOCAL" />
       <updated>1718450233701</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="首页">
+      <option name="closed" value="true" />
+      <created>1718456907561</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1718456907561</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化" />
@@ -436,7 +456,8 @@
     <MESSAGE value="新闻持久层接口和实现类" />
     <MESSAGE value="新闻业务层" />
     <MESSAGE value="登录注册界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录注册界面" />
+    <MESSAGE value="首页" />
+    <option name="LAST_COMMIT_MESSAGE" value="首页" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
