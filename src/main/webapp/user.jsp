@@ -32,7 +32,7 @@
 </body>
 <script>
     document.getElementById('upload').addEventListener('click', function() {
-        var fileInput = document.getElementById('updateAvatar');
+        var fileInput = document.getElementById('upadteAvatar'); // 修改这里
         var file = fileInput.files[0];
         var formData = new FormData();
         formData.append('avatar', file);
