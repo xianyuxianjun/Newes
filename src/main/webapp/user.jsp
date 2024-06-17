@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="user-card">
-    <img class="user-avatar" src="" id="avatar" alt="用户头像"> <!-- 添加头像的图片元素 -->
+    <img class="user-avatar" src="./img/头像.jpg" id="avatar" alt="用户头像"> <!-- 添加头像的图片元素 -->
     <div class="user-info">
         <div class="user-title">用户信息</div>
         <div class="user-name">用户名：<span id="username"></span></div>
@@ -25,15 +25,35 @@
         <div class="user-phone">电话：<span id="phone"></span></div>
         <div class="user-like">爱好：<span id="like"></span></div>
         <button id="update">修改信息</button> <!-- 将修改信息按钮的 id 修改为 update -->
+        <input type="file" id="upadteAvatar" accept="image/*">
+        <button id="upload">上传头像</button>
     </div>
 </div>
 </body>
+<script>
+    document.getElementById('upload').addEventListener('click', function() {
+        var fileInput = document.getElementById('updateAvatar');
+        var file = fileInput.files[0];
+        var formData = new FormData();
+        formData.append('avatar', file);
+        axios.post('/uploadAvatar', formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        }).then(function(response) {
+            console.log(response);
+        }).catch(function(error) {
+            console.log(error);
+        });
+    });
+</script>
 <script>
     //获取用户信息
     axios.post(api+"getUser",{
         userId:1
     })
     .then(res=>{
+        console.log(res);
         let data = res.data.data;
         document.getElementById ("avatar").src = data.avatar;
         document.getElementById ("username").innerText = data.username;

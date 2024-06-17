@@ -13,9 +13,11 @@ import java.io.IOException;
 public class GetUserServlet extends UserServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         //获取用户信息
         User user = RequestUtils.getParam(req, User.class);
         User user1 = userService.getUser(user.getUserId());
+        System.out.println(user1);
         if (user1 != null) {
             // 获取用户信息成功
             Res.success(resp, user1);

@@ -83,5 +83,9 @@ public class UserService {
     public User getUser(int id) {
         return userMapper.getUserById(id);
     }
+
+    public void updateAvatar(Integer userId, String filePath) {
+        userMapper.updateAvatar(userId, filePath);
+    }
 }
 

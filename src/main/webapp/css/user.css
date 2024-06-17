@@ -1,3 +1,4 @@
+
 .user-card {
     background-color: #f9d342; /* 更改为你喜欢的颜色 */
     border: 2px solid #000;
@@ -10,9 +11,10 @@
     width: 300px; /* 设置卡片的宽度 */
     height: auto; /* 设置卡片的高度 */
     overflow: auto; /* 如果内容超出卡片大小，会出现滚动条 */
-    position: absolute;
-    top: 50px; /* 调整卡片的位置 */
-    left: 50px;
+    position: fixed; /* 设置卡片的 position 为 fixed */
+    top: 50%; /* 将卡片移动到页面的垂直中心 */
+    left: 50%; /* 将卡片移动到页面的水平中心 */
+    transform: translate(-50%, -50%)
 }
 
 .user-card .user-avatar {

@@ -60,4 +60,5 @@ public interface UserMapper {
      */
     int updatePassword(int userId, String newPassword);
 
+    void updateAvatar(Integer userId, String filePath);
 }

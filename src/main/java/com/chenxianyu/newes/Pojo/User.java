@@ -20,8 +20,6 @@ public class User {
         this.avatar = avatar;
     }
 
-
-
     public User() {
     }
 

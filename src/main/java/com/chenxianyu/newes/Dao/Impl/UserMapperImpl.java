@@ -26,7 +26,11 @@ public class UserMapperImpl implements UserMapper {
     @Override
     public User getUserById(int userId) {
         try {
-            return queryRunner.query("SELECT * FROM user WHERE user_id=?", new BeanHandler<>(User.class),userId);
+            return queryRunner.query(
+                    "SELECT user_id AS userId, username, password, name, age, gender, phone, `like`,avatar,type FROM user WHERE user_id=?",
+                    new BeanHandler<>(User.class),
+                    userId
+            );
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
@@ -138,6 +142,20 @@ public class UserMapperImpl implements UserMapper {
             e.printStackTrace();
             return 0;
         }
+    }
+
+    /**
+     * @param userId
+     * @param filePath
+     */
+    @Override
+    public void updateAvatar(Integer userId, String filePath) {
+        try {
+            queryRunner.update("UPDATE user SET avatar=? WHERE user_id=?", filePath, userId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
 }
