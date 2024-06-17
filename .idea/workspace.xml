@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="上传头像（未完善）">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UploadAvatarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UploadAvatarServlet.java" afterDir="false" />
+    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="上传头像">
       <change beforePath="$PROJECT_DIR$/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -314,7 +312,7 @@
       <workItem from="1718456282069" duration="834000" />
       <workItem from="1718515222969" duration="8532000" />
       <workItem from="1718626488469" duration="1133000" />
-      <workItem from="1718627636185" duration="4053000" />
+      <workItem from="1718627636185" duration="4281000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />
@@ -452,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718630997477</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="上传头像">
+      <option name="closed" value="true" />
+      <created>1718631714796</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1718631714796</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +493,8 @@
     <MESSAGE value="信息卡" />
     <MESSAGE value="信息卡前后端联调" />
     <MESSAGE value="上传头像（未完善）" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传头像（未完善）" />
+    <MESSAGE value="上传头像" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传头像" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

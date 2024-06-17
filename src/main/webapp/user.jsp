@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="user-card">
-    <img class="user-avatar" src="./img/头像.jpg" id="avatar" alt="用户头像"> <!-- 添加头像的图片元素 -->
+    <img class="user-avatar" src="" id="avatar" alt="用户头像"> <!-- 添加头像的图片元素 -->
     <div class="user-info">
         <div class="user-title">用户信息</div>
         <div class="user-name">用户名：<span id="username"></span></div>
