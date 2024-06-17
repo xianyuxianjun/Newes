@@ -11,6 +11,7 @@
     <title>user</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./css/user.css">
+    <script src="js/config.js"></script>
 </head>
 <body>
 <div class="user-card">
@@ -28,17 +29,21 @@
 </div>
 </body>
 <script>
-    axios.post(api+'/user',{
-        username:username
-    }).then(res => {
+    //获取用户信息
+    axios.post(api+"getUser",{
+        userId:1
+    })
+    .then(res=>{
         let data = res.data.data;
-        document.querySelector('#username').innerText = data.username;
-        document.querySelector('#name').innerText = data.name;
-        document.querySelector('#age').innerText = data.age;
-        document.querySelector('#gender').innerText=data.gender;
-        document.querySelector('#phone').innerText = data.phone;
-        document.querySelector('#like').innerText = data.like;
-        document.querySelector('#avatar').src = data.avatar; // 添加获取头像的代码
-    });
+        document.getElementById ("avatar").src = data.avatar;
+        document.getElementById ("username").innerText = data.username;
+        document.getElementById ("name").innerText = data.name;
+        document.getElementById ("age").innerText = data.age;
+        document.getElementById("gender").innerText=data.gender;
+        document.getElementById("phone").innerText=data.phone;
+        document.getElementById("like").innerText=data.like;
+    }).catch(err=>{
+        console.log(err);
+    })
 </script>
 </html>
