@@ -10,10 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="首页">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/user.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2hosl0VmANKPt7LYuiGdmhRzmD7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -84,14 +85,14 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "F:/Newes/src/test/java",
-    "last_opened_file_path": "G:/Newes",
+    "last_opened_file_path": "F:/Newes/src/main/webapp/img",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true",
     "应用程序.Text.executor": "Run"
   },
@@ -111,8 +112,8 @@
       <recent name="F:\Newes\src\main\java\com\chenxianyu\newes\Pojo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Newes\src\main\webapp\img" />
       <recent name="F:\Newes\src\main\webapp" />
+      <recent name="F:\Newes\src\main\webapp\img" />
       <recent name="F:\Newes\src\main\webapp\WEB-INF" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -314,7 +315,6 @@
       <workItem from="1718456006224" duration="96000" />
       <workItem from="1718456282069" duration="834000" />
       <workItem from="1718515222969" duration="8532000" />
-      <workItem from="1718551051270" duration="5276000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />

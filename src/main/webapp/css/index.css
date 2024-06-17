@@ -245,7 +245,7 @@ body, html {
     overflow: auto; /* 如果内容超出卡片大小，会出现滚动条 */
     position: absolute;
     top: 405px; /* 调整卡片的位置，使其靠近机器人 */
-    left:500px;
+    left:520px;
     opacity: 0; /* 设置初始透明度为0 */
     animation: fadeIn 4s ease-out forwards; /* 添加淡入动画 */
     animation-delay: 1s; /* 设置动画延迟 */

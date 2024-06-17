@@ -1,0 +1,43 @@
+.user-card {
+    background-color: #f9d342; /* 更改为你喜欢的颜色 */
+    border: 2px solid #000;
+    border-radius: 15px; /* 设置卡片的圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* 添加卡片的阴影 */
+    padding: 20px;
+    font-family: 'Press Start 2P', cursive; /* 这是一个像素化的字体 */
+    font-size: 16px;
+    text-align: center;
+    width: 300px; /* 设置卡片的宽度 */
+    height: auto; /* 设置卡片的高度 */
+    overflow: auto; /* 如果内容超出卡片大小，会出现滚动条 */
+    position: absolute;
+    top: 50px; /* 调整卡片的位置 */
+    left: 50px;
+}
+
+.user-card .user-avatar {
+    width: 100px; /* 设置头像的宽度 */
+    height: 100px; /* 设置头像的高度 */
+    border-radius: 50%; /* 设置头像为圆形 */
+    object-fit: cover; /* 如果图片的宽高比与容器不同，图片将被裁剪 */
+    margin-bottom: 20px; /* 设置头像下方的边距 */
+}
+
+.user-card #update {
+    background-color: #008CBA; /* 添加背景颜色 */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.user-card #update:hover {
+    background-color: #007B9A; /* 鼠标悬停时改变背景颜色 */
+    color: white;
+}
