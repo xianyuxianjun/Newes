@@ -24,46 +24,59 @@
         <div class="user-gender">性别：<span id="gender"></span></div>
         <div class="user-phone">电话：<span id="phone"></span></div>
         <div class="user-like">爱好：<span id="like"></span></div>
+        <div class="upload-container">
+            <input type="file" id="upadteAvatar" accept="image/*">
+            <button id="upload">更换头像</button>
+        </div>
         <button id="update">修改信息</button> <!-- 将修改信息按钮的 id 修改为 update -->
-        <input type="file" id="upadteAvatar" accept="image/*">
-        <button id="upload">上传头像</button>
+
     </div>
 </div>
 </body>
 <script>
+    //上传头像
     document.getElementById('upload').addEventListener('click', function() {
-        var fileInput = document.getElementById('upadteAvatar'); // 修改这里
+        var fileInput = document.getElementById('upadteAvatar');
         var file = fileInput.files[0];
         var formData = new FormData();
         formData.append('avatar', file);
+        formData.append('userId', 1);
         axios.post('/uploadAvatar', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
         }).then(function(response) {
-            console.log(response);
+            alert("修改成功")
+            //清空图片选择框
+            fileInput.value = '';
+            this.getUserInfo()
         }).catch(function(error) {
             console.log(error);
         });
     });
 </script>
 <script>
+    window.onload = function () {
+        getUserInfo();
+    }
     //获取用户信息
-    axios.post(api+"getUser",{
-        userId:1
-    })
-    .then(res=>{
-        console.log(res);
-        let data = res.data.data;
-        document.getElementById ("avatar").src = data.avatar;
-        document.getElementById ("username").innerText = data.username;
-        document.getElementById ("name").innerText = data.name;
-        document.getElementById ("age").innerText = data.age;
-        document.getElementById("gender").innerText=data.gender;
-        document.getElementById("phone").innerText=data.phone;
-        document.getElementById("like").innerText=data.like;
-    }).catch(err=>{
-        console.log(err);
-    })
+    function getUserInfo(){
+        axios.post(api+"getUser",{
+            userId:1
+        })
+            .then(res=>{
+                console.log(res);
+                let data = res.data.data;
+                document.getElementById ("avatar").src = data.avatar;
+                document.getElementById ("username").innerText = data.username;
+                document.getElementById ("name").innerText = data.name;
+                document.getElementById ("age").innerText = data.age;
+                document.getElementById("gender").innerText=data.gender;
+                document.getElementById("phone").innerText=data.phone;
+                document.getElementById("like").innerText=data.like;
+            }).catch(err=>{
+            console.log(err);
+        })
+    }
 </script>
 </html>

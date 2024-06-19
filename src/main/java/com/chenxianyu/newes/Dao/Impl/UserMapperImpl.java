@@ -82,10 +82,19 @@ public class UserMapperImpl implements UserMapper {
      * @param user 包含更新信息的用户对象
      * @return 返回受影响的行数，表示更新的记录数量
      */
-    @Override
     public int updateUser(User user) {
         try {
-            return queryRunner.update("UPDATE user SET username=?, password=? WHERE id=?", user.getUsername(), user.getPassword(), user.getUserId());
+            return queryRunner.update(
+                    "UPDATE user SET username=?, password=?, name=?, age=?, gender=?, phone=?, `like`=? WHERE user_id=?",
+                    user.getUsername(),
+                    user.getPassword(),
+                    user.getName(),
+                    user.getAge(),
+                    user.getGender(),
+                    user.getPhone(),
+                    user.getLike(),
+                    user.getUserId()
+            );
         } catch (SQLException e) {
             e.printStackTrace();
             return 0;

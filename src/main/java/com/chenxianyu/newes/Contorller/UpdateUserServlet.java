@@ -1,28 +1,28 @@
 package com.chenxianyu.newes.Contorller;
 
 import com.chenxianyu.newes.Pojo.User;
-import com.chenxianyu.newes.Utils.UserServlet;
 import com.chenxianyu.newes.Utils.RequestUtils;
 import com.chenxianyu.newes.Utils.Res;
+import com.chenxianyu.newes.Utils.UserServlet;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-@WebServlet(urlPatterns = "/getUser")
-public class GetUserServlet extends UserServlet {
+
+@WebServlet(urlPatterns = "/updateUser")
+public class UpdateUserServlet extends UserServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //获取用户信息
+        //获取提交的信息
         User user = RequestUtils.getParam(req, User.class);
-        User user1 = userService.getUser(user.getUserId());
-        System.out.println(user1);
-        if (user1 != null) {
-            // 获取用户信息成功
-            Res.success(resp, user1);
+        if (userService.updateUser(user)) {
+            // 更新用户信息成功
+            Res.success(resp);
         } else {
-            // 获取用户信息失败
-            Res.error(resp, "Get user failed");
+            // 更新用户信息失败
+            Res.error(resp, "Update user failed");
         }
     }
 }

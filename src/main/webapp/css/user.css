@@ -25,8 +25,8 @@
     margin-bottom: 20px; /* 设置头像下方的边距 */
 }
 
-.user-card #update {
-    background-color: #008CBA; /* 添加背景颜色 */
+.user-card #update, .user-card #upload {
+    background: linear-gradient(to right, #008CBA, #00C9FF); /* 添加渐变背景色 */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -37,9 +37,15 @@
     margin: 4px 2px;
     cursor: pointer;
     transition-duration: 0.4s;
+    border-radius: 25px; /* 增加圆角 */
 }
 
-.user-card #update:hover {
-    background-color: #007B9A; /* 鼠标悬停时改变背景颜色 */
+.user-card #update:hover, .user-card #upload:hover {
+    background: linear-gradient(to right, #00C9FF, #008CBA); /* 鼠标悬停时改变背景颜色 */
     color: white;
+}
+.upload-container {
+    display: flex; /* 使用 flex 布局 */
+    justify-content: space-between; /* 在元素之间添加空间 */
+    width: 100%; /* 设置宽度为 100% */
 }
