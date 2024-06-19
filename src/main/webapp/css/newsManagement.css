@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0066cc 3px solid;
+}
+header a {
+    font-family: 'Press Start 2P', cursive; /* 导航栏字体 */
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    font-family: 'Press Start 2P', cursive; /* 标题字体 */
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+.news-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #f9d342; /* 表格背景颜色 */
+}
+.news-table th, .news-table td {
+    border: 2px solid #000; /* 表格边框颜色 */
+    padding: 8px;
+    text-align: left;
+    font-family: 'Press Start 2P', cursive; /* 表格字体 */
+}
+.news-table th {
+    background-color: #333; /* 表头背景颜色 */
+    color: #fff; /* 表头文字颜色 */
+}
+.news-table .actions {
+    text-align: center;
+}
+.news-table .actions a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #333; /* 操作按钮文字颜色 */
+    text-decoration: none;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.news-table .actions a:hover {
+    background-color: #f2f2f2; /* 悬停时按钮背景颜色 */
+}
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.pagination a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.pagination a:hover {
+    background-color: #f2f2f2;
+}

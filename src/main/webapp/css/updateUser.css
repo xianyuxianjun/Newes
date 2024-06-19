@@ -1,0 +1,60 @@
+
+.user-card {
+    background-color: #f9d342; /* 更改为你喜欢的颜色 */
+    border: 2px solid #000;
+    border-radius: 15px; /* 设置卡片的圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* 添加卡片的阴影 */
+    padding: 20px;
+    font-family: 'Press Start 2P', cursive; /* 这是一个像素化的字体 */
+    font-size: 16px;
+    text-align: center;
+    width: 300px; /* 设置卡片的宽度 */
+    height: auto; /* 设置卡片的高度 */
+    overflow: auto; /* 如果内容超出卡片大小，会出现滚动条 */
+    position: fixed; /* 设置卡片的 position 为 fixed */
+    top: 50%; /* 将卡片移动到页面的垂直中心 */
+    left: 50%; /* 将卡片移动到页面的水平中心 */
+    transform: translate(-50%, -50%)
+}
+
+.user-card .user-avatar {
+    width: 100px; /* 设置头像的宽度 */
+    height: 100px; /* 设置头像的高度 */
+    border-radius: 50%; /* 设置头像为圆形 */
+    object-fit: cover; /* 如果图片的宽高比与容器不同，图片将被裁剪 */
+    margin-bottom: 20px; /* 设置头像下方的边距 */
+}
+
+.user-card #update, .user-card #upload {
+    background: linear-gradient(to right, #008CBA, #00C9FF); /* 添加渐变背景色 */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 25px; /* 增加圆角 */
+}
+.user-card input {
+    width: 100%; /* 设置宽度为 100% */
+    padding: 10px; /* 增加内���距 */
+    border: 1px solid #ccc; /* 添加边框 */
+    border-radius: 4px; /* 设置边框为圆角 */
+    box-sizing: border-box; /* 使宽度和高度包括内容、内边距和边框，但不包括外边距 */
+    margin-top: 6px; /* 增加上边距 */
+    margin-bottom: 16px; /* 增加下边距 */
+    resize: vertical; /* 允许用户调整元素的垂直大小 */
+}
+.user-card #update:hover, .user-card #upload:hover {
+    background: linear-gradient(to right, #00C9FF, #008CBA); /* 鼠标悬停时改变背景颜色 */
+    color: white;
+}
+.upload-container {
+    display: flex; /* 使用 flex 布局 */
+    justify-content: space-between; /* 在元素之间添加空间 */
+    width: 100%; /* 设置宽度为 100% */
+}

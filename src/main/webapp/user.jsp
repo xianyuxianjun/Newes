@@ -28,7 +28,7 @@
             <input type="file" id="upadteAvatar" accept="image/*">
             <button id="upload">更换头像</button>
         </div>
-        <button id="update">修改信息</button> <!-- 将修改信息按钮的 id 修改为 update -->
+        <button id="update" onclick="toUpdate()">修改信息</button> <!-- 将修改信息按钮的 id 修改为 update -->
 
     </div>
 </div>
@@ -77,6 +77,12 @@
             }).catch(err=>{
             console.log(err);
         })
+    }
+</script>
+<script>
+    //跳转到修改页面
+    function toUpdate(){
+        window.location.href = 'updeteUser.jsp';
     }
 </script>
 </html>

@@ -4,12 +4,18 @@ import com.google.gson.Gson;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
+import java.io.UnsupportedEncodingException;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 
 public class RequestUtils {
     public static <T> T getParam(HttpServletRequest req, Class<T> clazz) {
+        try {
+            req.setCharacterEncoding("UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
         T object = null;
         try {
             StringBuilder sb = new StringBuilder();

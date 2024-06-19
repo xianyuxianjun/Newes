@@ -9,14 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UpdateUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/updeteUser.jsp" afterDir="false" />
+    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="修改信息">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/addNews.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/addNews.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/editNews.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/newsManagement.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/updateUser.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/editNews.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/newsManagement.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/GetUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/GetUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UploadAvatarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UploadAvatarServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UpdateUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UpdateUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Utils/RequestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Utils/RequestUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/user.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/user.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/updeteUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updeteUser.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,9 +35,9 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -88,7 +93,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "F:/Newes/src/test/java",
-    "last_opened_file_path": "F:/Newes/src/main/webapp/updeteUser.jsp",
+    "last_opened_file_path": "F:/Newes/src/main/webapp/css",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -110,13 +115,14 @@
       <recent name="com.chenxianyu.newes.Utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Newes\src\main\webapp\css" />
       <recent name="F:\Newes\src\main\webapp\img" />
       <recent name="F:\Newes\src\main\webapp\Newes_war_exploded" />
       <recent name="F:\Newes\src\main\java\com\chenxianyu\newes\Pojo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Newes\src\main\webapp\img" />
       <recent name="F:\Newes\src\main\webapp" />
+      <recent name="F:\Newes\src\main\webapp\img" />
       <recent name="F:\Newes\src\main\webapp\WEB-INF" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -323,7 +329,7 @@
       <workItem from="1718679168004" duration="97000" />
       <workItem from="1718683307131" duration="282000" />
       <workItem from="1718685258210" duration="140000" />
-      <workItem from="1718765225677" duration="4513000" />
+      <workItem from="1718765225677" duration="13154000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />
@@ -477,7 +483,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718631951900</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="修改信息">
+      <option name="closed" value="true" />
+      <created>1718769797099</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1718769797099</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +528,8 @@
     <MESSAGE value="上传头像（未完善）" />
     <MESSAGE value="上传头像" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="修改信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改信息" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

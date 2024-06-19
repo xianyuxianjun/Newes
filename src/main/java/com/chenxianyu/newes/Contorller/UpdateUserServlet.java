@@ -17,6 +17,7 @@ public class UpdateUserServlet extends UserServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //获取提交的信息
         User user = RequestUtils.getParam(req, User.class);
+
         if (userService.updateUser(user)) {
             // 更新用户信息成功
             Res.success(resp);

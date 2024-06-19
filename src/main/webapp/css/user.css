@@ -1,51 +1,96 @@
-
 .user-card {
-    background-color: #f9d342; /* 更改为你喜欢的颜色 */
+    background-color: #f9d342;
     border: 2px solid #000;
-    border-radius: 15px; /* 设置卡片的圆角 */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* 添加卡片的阴影 */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     padding: 20px;
-    font-family: 'Press Start 2P', cursive; /* 这是一个像素化的字体 */
+    font-family: 'Press Start 2P', cursive;
     font-size: 16px;
     text-align: center;
-    width: 300px; /* 设置卡片的宽度 */
-    height: auto; /* 设置卡片的高度 */
-    overflow: auto; /* 如果内容超出卡片大小，会出现滚动条 */
-    position: fixed; /* 设置卡片的 position 为 fixed */
-    top: 50%; /* 将卡片移动到页面的垂直中心 */
-    left: 50%; /* 将卡片移动到页面的水平中心 */
-    transform: translate(-50%, -50%)
+    width: 350px;
+    height: auto;
+    overflow: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .user-card .user-avatar {
-    width: 100px; /* 设置头像的宽度 */
-    height: 100px; /* 设置头像的高度 */
-    border-radius: 50%; /* 设置头像为圆形 */
-    object-fit: cover; /* 如果图片的宽高比与容器不同，图片将被裁剪 */
-    margin-bottom: 20px; /* 设置头像下方的边距 */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.user-card #update, .user-card #upload {
-    background: linear-gradient(to right, #008CBA, #00C9FF); /* 添加渐变背景色 */
-    border: none;
-    color: white;
-    padding: 15px 32px;
+.user-card .user-info {
+    width: 100%;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    border-radius: 25px; /* 增加圆角 */
 }
 
-.user-card #update:hover, .user-card #upload:hover {
-    background: linear-gradient(to right, #00C9FF, #008CBA); /* 鼠标悬停时改变背景颜色 */
-    color: white;
+.user-card .user-name,
+.user-card .user-real-name,
+.user-card .user-age,
+.user-card .user-gender,
+.user-card .user-phone,
+.user-card .user-like {
+    margin-bottom: 10px;
+    color: #555;
 }
-.upload-container {
-    display: flex; /* 使用 flex 布局 */
-    justify-content: space-between; /* 在元素之间添加空间 */
-    width: 100%; /* 设置宽度为 100% */
+
+.user-card .user-info input,
+.user-card .user-info select {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
 }
+
+.user-card button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.user-card button:hover {
+    background-color: #333;
+}
+.user-card .user-gender {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.user-card .user-gender select {
+    margin-left: 10px;
+    padding: 5px 30px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    appearance: none; /* 去除默认下拉箭头 */
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23333'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat right #fff;
+    background-size: 12px;
+    background-position: right 10px center;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.user-card .user-gender select:hover {
+    border-color: #999;
+}
+
