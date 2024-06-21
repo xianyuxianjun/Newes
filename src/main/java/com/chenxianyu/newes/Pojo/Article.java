@@ -10,10 +10,34 @@ public class Article {
     private Date publishDate; // 发布日期
     private Date modifyDate; // 修改日期
     private int authorId; // 作者ID
-    private int categoryId; // 类别ID
+    private int categoryId;
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    private int num;//阅读量
 
     public int getArticleId() {
         return articleId;
+    }
+
+    @Override
+    public String toString() {
+        return "Article{" +
+                "articleId=" + articleId +
+                ", title='" + title + '\'' +
+                ", summary='" + summary + '\'' +
+                ", content='" + content + '\'' +
+                ", publishDate=" + publishDate +
+                ", modifyDate=" + modifyDate +
+                ", authorId=" + authorId +
+                ", categoryId=" + categoryId +
+                '}';
     }
 
     public void setArticleId(int articleId) {

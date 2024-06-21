@@ -97,4 +97,20 @@ public class User {
     public void setUserId(Integer userId) {
         this.userId = userId;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", phone='" + phone + '\'' +
+                ", like='" + like + '\'' +
+                ", type=" + type +
+                ", avatar='" + avatar + '\'' +
+                '}';
+    }
 }

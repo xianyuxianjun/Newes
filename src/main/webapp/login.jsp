@@ -30,35 +30,38 @@
             <label>密码</label>
         </div>
         <div class="button-box">
-            <button type="submit">登录</button>
-            <button type="button" class="register">还没有账号？点击注册</button> <!-- 修改注册按钮 -->
+            <button onclick="login()">登录</button>
+            <button type="button" class="register" onclick="register()">还没有账号？点击注册</button> <!-- 修改注册按钮 -->
         </div>
     </form>
 </div>
 </body>
 <script>
-    document.querySelector('.register').addEventListener('click', function () {
-        window.location.href = 'register.jsp';
-    });
+
 </script>
 <script>
-    document.querySelector('form').addEventListener('submit', function (e) {
-        e.preventDefault();
-        let username = document.querySelector('input[type="text"]').value;
-        let password = document.querySelector('input[type="password"]').value;
-        axios.post(api+'/login', {
-            username: username,
-            password: password
-        }).then(res => {
-            if (res.data.code === 1) {
-                alert('登录成功');
-                window.location.href = 'index.jsp';
-            } else {
-                alert('登录失败');
-            }
-        }).catch(err => {
-            console.log(err);
-        });
-    })
+    //跳转注册
+    function register(){
+        document.querySelector('.register').addEventListener('click',function(){
+            window.location.href = 'register.jsp';
+        })
+    }
+    //登录
+    function login(){
+            let user={username:'',password:''};
+            user.username = document.querySelector('input[type="text"]').value;
+            user.password = document.querySelector('input[type="password"]').value;
+            axios.post(api+'/login',user).then(res => {
+                if (res.data.code === 1) {
+                    localStorage.setItem('userId', res.data.data.userId);
+                    alert('登录成功');
+                    window.location.href = 'index.jsp';
+                } else {
+                    alert('登录失败');
+                }
+            }).catch(err => {
+                console.log(err);
+            });
+    }
 </script>
 </html>

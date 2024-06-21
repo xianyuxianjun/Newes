@@ -48,4 +48,10 @@ class UserServiceTest {
         assertNotNull(user);
         assertEquals(1, user.getUserId());
     }
+
+    @org.junit.jupiter.api.Test
+    void getUserByUsername() {
+        User user = userService.getUserByUsername("user2");
+        System.out.println(user.toString());
+    }
 }

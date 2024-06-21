@@ -27,7 +27,7 @@ public class UserMapperImpl implements UserMapper {
     public User getUserById(int userId) {
         try {
             return queryRunner.query(
-                    "SELECT user_id AS userId, username, password, name, age, gender, phone, `like`,avatar,type FROM user WHERE user_id=?",
+                    "SELECT userId, username, password, name, age, gender, phone, `like`,avatar,type FROM user WHERE userId=?",
                     new BeanHandler<>(User.class),
                     userId
             );
@@ -85,7 +85,7 @@ public class UserMapperImpl implements UserMapper {
     public int updateUser(User user) {
         try {
             return queryRunner.update(
-                    "UPDATE user SET username=?, password=?, name=?, age=?, gender=?, phone=?, `like`=? WHERE user_id=?",
+                    "UPDATE user SET username=?, password=?, name=?, age=?, gender=?, phone=?, `like`=? WHERE userId=?",
                     user.getUsername(),
                     user.getPassword(),
                     user.getName(),
@@ -110,7 +110,7 @@ public class UserMapperImpl implements UserMapper {
     @Override
     public int deleteUser(int id) {
         try {
-            return queryRunner.update("DELETE FROM user WHERE id=?", id);
+            return queryRunner.update("DELETE FROM user WHERE userId=?", id);
         } catch (SQLException e) {
             e.printStackTrace();
             return 0;
@@ -146,7 +146,7 @@ public class UserMapperImpl implements UserMapper {
     public int updatePassword(int userId, String newPassword) {
         try {
             // 使用用户 ID 作为更新条件
-            return queryRunner.update("UPDATE user SET password=? WHERE id=?", newPassword, userId);
+            return queryRunner.update("UPDATE user SET password=? WHERE userId=?", newPassword, userId);
         } catch (SQLException e) {
             e.printStackTrace();
             return 0;
@@ -160,7 +160,7 @@ public class UserMapperImpl implements UserMapper {
     @Override
     public void updateAvatar(Integer userId, String filePath) {
         try {
-            queryRunner.update("UPDATE user SET avatar=? WHERE user_id=?", filePath, userId);
+            queryRunner.update("UPDATE user SET avatar=? WHERE userId=?", filePath, userId);
         } catch (SQLException e) {
             e.printStackTrace();
         }
