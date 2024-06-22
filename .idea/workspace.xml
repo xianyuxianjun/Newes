@@ -10,23 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="修改新闻，新闻管理，编辑新闻，删除新闻前端">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/DeleteNewsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/getNewsListServelt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/ArticleListDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Utils/JsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/chenxianyu/newes/Text/ArcitleMapperImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/AddNewsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/DeleteUserServelt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/GetUserLIstServelt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/UpdateNewsServLet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/UserListDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/userManagement.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/userManagement.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chenxianyu/newes/Service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/LoginServet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/LoginServet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/ArcitleMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/ArcitleMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Utils/ArticleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Utils/ArticleServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/newsManagement.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/newsManagement.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/newsManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/newsManagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/chenxianyu/newes/Text/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chenxianyu/newes/Text/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/updeteUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updeteUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +44,8 @@
         <option value="JavaScript File" />
         <option value="Jsp File" />
         <option value="CSS File" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -82,6 +86,7 @@
     "HTTP 请求.generated-requests | #3.executor": "Run",
     "JUnit.ArcitleMapperImplTest.getArticleList.executor": "Run",
     "JUnit.UpdatePasswordServletTest.doPost.executor": "Run",
+    "JUnit.UserServiceTest.deleteUser.executor": "Debug",
     "JUnit.UserServiceTest.getUserByUsername.executor": "Run",
     "JavaScript 调试.login.jsp.executor": "Run",
     "OverrideImplement.generate.javadoc": "true",
@@ -99,7 +104,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "F:/Newes/src/test/java",
-    "last_opened_file_path": "F:/Newes/src/main/webapp/newsManagement.jsp",
+    "last_opened_file_path": "F:/Newes/src/main/webapp/userManagement.jsp",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -135,6 +140,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.chenxianyu.newes.Service" />
       <recent name="com.chenxianyu.newes.Text" />
       <recent name="com.chenxianyu.newes.Dao.Impl" />
     </key>
@@ -167,6 +173,22 @@
       <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Text" />
       <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Text.UpdatePasswordServletTest" />
       <option name="METHOD_NAME" value="doPost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.deleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Newes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chenxianyu.newes.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Service" />
+      <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Service.UserServiceTest" />
+      <option name="METHOD_NAME" value="deleteUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -206,26 +228,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Text.test3" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Newes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chenxianyu.newes.Text.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Text" />
-      <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Text.Text" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 8.5.100" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.100" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/newsManagement.jsp" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/userManagement.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -315,20 +319,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.UserServiceTest.deleteUser" />
       <item itemvalue="JUnit.ArcitleMapperImplTest.getArticleList" />
       <item itemvalue="JUnit.UserServiceTest.getUserByUsername" />
       <item itemvalue="JUnit.UpdatePasswordServletTest.doPost" />
       <item itemvalue="TestNG.Text.test1" />
-      <item itemvalue="TestNG.Text.test3" />
       <item itemvalue="Tomcat 服务器.Tomcat 8.5.100" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.deleteUser" />
         <item itemvalue="JUnit.ArcitleMapperImplTest.getArticleList" />
         <item itemvalue="JUnit.UserServiceTest.getUserByUsername" />
         <item itemvalue="JUnit.UpdatePasswordServletTest.doPost" />
         <item itemvalue="TestNG.Text.test1" />
-        <item itemvalue="TestNG.Text.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -369,6 +373,7 @@
       <workItem from="1718867176285" duration="439000" />
       <workItem from="1718950757728" duration="4660000" />
       <workItem from="1718968365023" duration="10244000" />
+      <workItem from="1719019707376" duration="8192000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />

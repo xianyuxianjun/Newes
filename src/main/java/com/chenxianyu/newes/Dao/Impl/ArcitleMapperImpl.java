@@ -26,7 +26,7 @@ public class ArcitleMapperImpl implements ArcitleMapper {
     @Override
     public Article getArticleById(int articleId) {
         try {
-            return queryRunner.query("SELECT * FROM article WHERE article_id=?", new BeanHandler<>(Article.class),articleId);
+            return queryRunner.query("SELECT * FROM articles WHERE article_id=?", new BeanHandler<>(Article.class),articleId);
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
@@ -40,7 +40,7 @@ public class ArcitleMapperImpl implements ArcitleMapper {
     @Override
     public int createArticle(Article article) {
         try {
-            return queryRunner.update("INSERT INTO article(title,summary,content,publish_date,modify_date,author_id,category_id) VALUES(?,?,?,?,?,?,?)",
+            return queryRunner.update("INSERT INTO articles(title,summary,content,publishDate,modifyDate,authorId,categoryId) VALUES(?,?,?,?,?,?,?)",
                     article.getTitle(),article.getSummary(),article.getContent(),article.getPublishDate(),article.getModifyDate(),article.getAuthorId(),article.getCategoryId());
         } catch (SQLException e) {
             e.printStackTrace();

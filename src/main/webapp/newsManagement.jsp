@@ -23,8 +23,9 @@
         </div>
         <nav>
             <ul>
-                <li class="current"><a href="index.html">首页</a></li>
-                <li><a href="add-news.html">添加新闻</a></li>
+                <li ><a href="./index.jsp">首页</a></li>
+                <li ><a href="newsManagement.jsp">新闻管理</a></li>
+                <li><a href="addNews.jsp">添加新闻</a></li>
             </ul>
         </nav>
     </div>
@@ -149,9 +150,10 @@
 
     // 编辑新闻
     function editNews(id) {
-        console.log('执行编辑操作，文章ID为：', id);
+        //把id存到浏览器
+        localStorage.setItem('articleId', id);
         // 例如跳转到编辑页面
-        window.location.href = `edit-news.html?id=${id}`;
+        window.location.href = `editNews.jsp`;
     }
 
     // 上一页按钮点击事件

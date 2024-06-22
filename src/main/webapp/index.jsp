@@ -39,10 +39,10 @@
 <div class="card">
     <p>尊敬的冒险家您好，欢迎您来到冒险岛，请问你有什么需要帮忙的吗？</p>
     <ul>
-        <li><a href="#">我是情报官，我要进入情报中心</a></li>
+        <li><a href="newsManagement.jsp">我是情报官，我要进入管理中心</a></li>
         <li><a href="#">我想去浏览一些情报</a></li>
         <li><a href="#">我想去冒险岛广场聊聊天</a></li>
-        <li><a href="#">我想去信息局修改我的身份信息</a></li>
+        <li><a href="user.jsp">我想去信息局修改我的身份信息</a></li>
     </ul>
 </div>
 </body>

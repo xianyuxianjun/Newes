@@ -1,0 +1,181 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0066cc 3px solid;
+}
+
+header a {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.user-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #f9d342;
+    table-layout: fixed; /* 使用固定表格布局 */
+}
+
+.user-table th, .user-table td {
+    border: 2px solid #000;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Press Start 2P', cursive;
+    white-space: nowrap; /* 不换行 */
+    text-overflow: ellipsis; /* 超出部分显示省略号 */
+    overflow: hidden; /* 超出部分隐藏 */
+}
+
+.user-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.avatar-cell {
+    width: 80px; /* 调整头像单元格宽度 */
+    height: 80px; /* 调整头像单元格高度 */
+}
+
+.avatar-cell img {
+    max-width: 100%; /* 图片最大宽度为单元格宽度 */
+    max-height: 100%; /* 图片最大高度为单元格高度 */
+    display: block; /* 去除默认行间距 */
+    margin: auto; /* 图片居中 */
+    border-radius: 50%; /* 设置圆形头像 */
+}
+
+.actions {
+    text-align: center;
+}
+
+.actions button {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.actions .edit-btn {
+    background-color: #f9d342;
+    opacity: 1; /* 调整按钮不透明度 */
+    color: #000; /* 设置按钮文字颜色为黑色 */
+}
+
+.actions .edit-btn:hover {
+    background-color: #e8c82a;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.admin-btn {
+    background-color: #007bff;
+}
+
+.admin-btn:hover {
+    background-color: #0056b3;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* 移除按钮默认的下划线 */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination span {
+    font-size: 16px;
+    margin: 0 10px; /* 为当前页码增加一些间距 */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.cz{
+    width: 256px;
+}

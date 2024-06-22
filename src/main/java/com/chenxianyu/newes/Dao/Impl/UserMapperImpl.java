@@ -5,7 +5,10 @@ import com.chenxianyu.newes.Pojo.User;
 import com.chenxianyu.newes.Utils.DataSourceFactory;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+
 import java.sql.SQLException;
+import java.util.List;
 
 public class UserMapperImpl implements UserMapper {
     private QueryRunner queryRunner;
@@ -165,6 +168,21 @@ public class UserMapperImpl implements UserMapper {
             e.printStackTrace();
         }
 
+    }
+
+    /**
+     * @param offset
+     * @param limit
+     * @return
+     */
+    @Override
+    public List<User> getUserList(int offset, int limit) {
+        try {
+            return queryRunner.query("SELECT * FROM user LIMIT ?,?", new BeanListHandler<>(User.class), offset, limit);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return List.of();
+        }
     }
 
 }

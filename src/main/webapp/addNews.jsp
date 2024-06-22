@@ -12,6 +12,7 @@
     <title>新增新闻</title>
     <link rel="stylesheet" href="css/addNews.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/config.js"></script>
 </head>
 <body>
 <header>
@@ -21,8 +22,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="add-news.html">添加新闻</a></li>
+                <li ><a href="./index.jsp">首页</a></li>
+                <li ><a href="newsManagement.jsp">新闻管理</a></li>
+                <li><a href="addNews.jsp">添加新闻</a></li>
             </ul>
         </nav>
     </div>
@@ -30,12 +32,12 @@
 <section>
     <div class="container">
         <h2>新增新闻</h2>
-        <form class="news-form" method="post">
+        <form class="news-form">
             <input type="text" name="title" placeholder="新闻标题" required>
             <textarea name="summary" placeholder="新闻摘要" required></textarea>
             <textarea name="content" placeholder="新闻内容" required></textarea>
             <textarea name="type" placeholder="type" required></textarea>
-            <button type="submit">发布新闻</button>
+            <button onclick="putNews()">发布新闻</button>
         </form>
     </div>
 </section>
@@ -48,6 +50,10 @@
         news.summary = document.getElementsByName('summary')[0].value;
         news.content = document.getElementsByName('content')[0].value;
         news.type = document.getElementsByName('type')[0].value;
+        var currentDate = new Date();
+        news.publishDate = currentDate.toISOString().slice(0, 10);
+        news.authorId = 1;
+        news.categoryId = 1;
         return news;
     }
     //提交新闻
@@ -63,7 +69,6 @@
                 console.log(res);
                 if (res.data.code === 1){
                     alert('发布成功');
-                    window.location.href = 'index.html';
                 }else {
                     alert('发布失败');
                 }

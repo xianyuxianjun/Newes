@@ -50,7 +50,7 @@
         user.gender= getInputValue('gender')
         user.phone= getInputValue('phone');
         user.like= getInputValue('like');
-        user.userId= 1;
+        user.userId= localStorage.getItem('userId')
         return user;
     }
     //提交修改
@@ -71,7 +71,8 @@
     }
     //获取头像
     function getImg() {
-        axios.post(api+'/getUser',{userId:1})
+        let userId = localStorage.getItem("userId")
+        axios.post(api+'/getUser',{userId:userId})
             .then(res=>{
                 document.getElementById('avatar').src=res.data.data.avatar;
             }).catch(err=>{

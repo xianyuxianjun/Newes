@@ -29,7 +29,6 @@
             <button id="upload">更换头像</button>
         </div>
         <button id="update" onclick="toUpdate()">修改信息</button> <!-- 将修改信息按钮的 id 修改为 update -->
-
     </div>
 </div>
 </body>

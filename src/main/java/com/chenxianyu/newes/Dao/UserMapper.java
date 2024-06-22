@@ -2,6 +2,8 @@ package com.chenxianyu.newes.Dao;
 
 import com.chenxianyu.newes.Pojo.User;
 
+import java.util.List;
+
 public interface UserMapper {
 
     /**
@@ -61,4 +63,6 @@ public interface UserMapper {
     int updatePassword(int userId, String newPassword);
 
     void updateAvatar(Integer userId, String filePath);
+
+    List<User> getUserList(int offset, int limit);
 }

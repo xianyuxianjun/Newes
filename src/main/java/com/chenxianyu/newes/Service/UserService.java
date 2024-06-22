@@ -3,6 +3,8 @@ package com.chenxianyu.newes.Service;
 import com.chenxianyu.newes.Dao.Impl.UserMapperImpl;
 import com.chenxianyu.newes.Pojo.User;
 
+import java.util.List;
+
 public class UserService {
         UserMapperImpl userMapper = new UserMapperImpl();
 
@@ -90,6 +92,14 @@ public class UserService {
 
     public User getUserByUsername(String username) {
         return userMapper.getUserByUsername(username);
+    }
+
+    public List<User> getUserList(int offset, int limit) {
+        return userMapper.getUserList(offset, limit);
+    }
+
+    public int deleteUser(int id) {
+        return userMapper.deleteUser(id);
     }
 }
 
