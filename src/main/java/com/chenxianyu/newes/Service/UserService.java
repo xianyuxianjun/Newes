@@ -101,5 +101,9 @@ public class UserService {
     public int deleteUser(int id) {
         return userMapper.deleteUser(id);
     }
+
+    public int addUser(User user) {
+        return userMapper.createUser(user);
+    }
 }
 

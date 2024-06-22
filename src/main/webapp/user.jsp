@@ -39,7 +39,8 @@
         var file = fileInput.files[0];
         var formData = new FormData();
         formData.append('avatar', file);
-        formData.append('userId', 1);
+        userId= localStorage.getItem('userId');
+        formData.append('userId', userId);
         axios.post('/uploadAvatar', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -60,8 +61,9 @@
     }
     //获取用户信息
     function getUserInfo(){
+        userId = localStorage.getItem('userId');
         axios.post(api+"getUser",{
-            userId:1
+            userId:userId
         })
             .then(res=>{
                 console.log(res);

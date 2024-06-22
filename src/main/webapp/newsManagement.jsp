@@ -24,6 +24,7 @@
         <nav>
             <ul>
                 <li ><a href="./index.jsp">首页</a></li>
+                <li ><a href="userManagement.jsp">用户管理</a></li>
                 <li ><a href="newsManagement.jsp">新闻管理</a></li>
                 <li><a href="addNews.jsp">添加新闻</a></li>
             </ul>

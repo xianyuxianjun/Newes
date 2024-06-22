@@ -60,8 +60,8 @@
             .then(res=>{
                 if (res.data.code===1){
                     alert('修改成功')
-                    //返回user.jsp
-                    window.location.href='user.jsp'
+                    //返回上一页
+                    window.history.back();
                 }else{
                     alert('修改失败')
                 }

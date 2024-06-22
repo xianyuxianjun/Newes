@@ -23,8 +23,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="./index.jsp">首页</a></li>
-                <li><a href="userManagement.jsp">用户管理</a></li>
+                <li ><a href="./index.jsp">首页</a></li>
+                <li ><a href="userManagement.jsp">用户管理</a></li>
+                <li ><a href="newsManagement.jsp">新闻管理</a></li>
                 <li><a href="addUser.jsp">添加用户</a></li>
             </ul>
         </nav>
@@ -117,11 +118,26 @@
                 console.error('删除用户失败:', err);
             });
     }
-    //toUser
+    //修改用户
     function toUser(id) {
         localStorage.setItem('userId', id);
         window.location.href = 'updeteUser.jsp';
     }
+    //设为管理员
+    function setAdmin(id) {
+        axios.post(api + 'setAdmin', {
+            userId: id,
+            type:1
+        })
+            .then(res => {
+                console.log('设置管理员成功:', res);
+                getUserList();
+            })
+            .catch(err => {
+                console.error('设置管理员失败:', err);
+            });
+    }
+
     // 更新表格内容
     function updateTable(userList) {
         let tbody = document.querySelector('.user-table tbody');
@@ -190,7 +206,14 @@
 
             let adminButton = document.createElement('button');
             adminButton.classList.add('admin-btn');
-            adminButton.textContent = '设为管理员';
+            if (user.type==1){
+                adminButton.textContent = '管理员';
+            }else{
+                adminButton.textContent = '设为管理员';
+                adminButton.addEventListener('click', function() {
+                    setAdmin(user.userId); // 调用 setAdmin 函数，并将用户的 id 作为参数传递
+                });
+            }
             actionsCell.appendChild(adminButton);
 
             tr.appendChild(actionsCell);

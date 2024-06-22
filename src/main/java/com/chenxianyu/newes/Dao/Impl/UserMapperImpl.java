@@ -65,14 +65,16 @@ public class UserMapperImpl implements UserMapper {
     @Override
     public int createUser(User user) {
         try {
-            return queryRunner.update("INSERT INTO user(username, password, name, age, gender, phone, `like`) VALUES(?,?,?,?,?,?,?)" ,
+            return queryRunner.update("INSERT INTO user(username, password, name, age, gender, phone, `like`,type) VALUES(?,?,?,?,?,?,?,?)" ,
                     user.getUsername(),
                     user.getPassword(),
                     user.getName(),
                     user.getAge(),
                     user.getGender(),
                     user.getPhone(),
-                    user.getLike());
+                    user.getLike(),
+                    user.getType()
+            );
         } catch (SQLException e) {
             e.printStackTrace();
             return 0;
