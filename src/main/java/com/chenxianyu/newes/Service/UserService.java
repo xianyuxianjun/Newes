@@ -105,5 +105,9 @@ public class UserService {
     public int addUser(User user) {
         return userMapper.createUser(user);
     }
+
+    public int setAdmin(User user) {
+        return userMapper.setAdmin(user);
+    }
 }
 

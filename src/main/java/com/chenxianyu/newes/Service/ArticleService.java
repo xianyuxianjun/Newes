@@ -25,4 +25,20 @@ public class ArticleService {
     public int addArticle(Article article) {
         return arcitleMapper.createArticle(article);
     }
+
+    public List<Article> getArticleListByKeyword(String keyword, int offset, int limit) {
+        return arcitleMapper.getArticleListByKeyword(keyword, offset, limit);
+    }
+
+    public Article getAricleById(int articleId) {
+        return arcitleMapper.getArticleById(articleId);
+    }
+
+    public void addNum(int articleId) {
+        arcitleMapper.addNum(articleId);
+    }
+
+    public List<Article> getArticleList() {
+        return arcitleMapper.getTopFive();
+    }
 }

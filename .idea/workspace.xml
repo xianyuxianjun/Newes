@@ -9,16 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="修改新闻，新闻管理，编辑新闻，删除新闻前端">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/AddUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/addUser.jsp" afterDir="false" />
+    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="最新版">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/GetNewsServelet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/SearchNewsServLet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/SetAdminServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/TupFiveServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/KeywordDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/News.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/NewsList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chenxianyu/newes/Service/ArticleServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/ArcitleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/ArcitleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/ArcitleMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/ArcitleMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/newsManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/newsManagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/updeteUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updeteUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userManagement.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +44,8 @@
         <option value="Interface" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="JUnit5 Test Class" />
         <option value="Jsp File" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -73,6 +86,9 @@
     "HTTP 请求.generated-requests | #2.executor": "Run",
     "HTTP 请求.generated-requests | #3.executor": "Run",
     "JUnit.ArcitleMapperImplTest.getArticleList.executor": "Run",
+    "JUnit.ArticleServiceTest.addNum.executor": "Run",
+    "JUnit.ArticleServiceTest.getAricleById.executor": "Run",
+    "JUnit.ArticleServiceTest.getArticleList.executor": "Run",
     "JUnit.UpdatePasswordServletTest.doPost.executor": "Run",
     "JUnit.UserServiceTest.deleteUser.executor": "Debug",
     "JUnit.UserServiceTest.getUserByUsername.executor": "Run",
@@ -92,7 +108,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "F:/Newes/src/test/java",
-    "last_opened_file_path": "F:/Newes/src/main/webapp/index.jsp",
+    "last_opened_file_path": "F:/Newes/src/main/webapp/NewsList.jsp",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -114,10 +130,11 @@
       <recent name="com.chenxianyu.newes.Utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Newes\src\main\webapp" />
+      <recent name="F:\Newes\src\main\java\com\chenxianyu\newes\Pojo" />
+      <recent name="F:\Newes\src\main\java\com\chenxianyu\newes\Contorller" />
       <recent name="F:\Newes\src\main\webapp\css" />
       <recent name="F:\Newes\src\main\webapp\img" />
-      <recent name="F:\Newes\src\main\webapp\Newes_war_exploded" />
-      <recent name="F:\Newes\src\main\java\com\chenxianyu\newes\Pojo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Newes\src\main\webapp" />
@@ -150,17 +167,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UpdatePasswordServletTest.doPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArticleServiceTest.addNum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Newes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chenxianyu.newes.Text.*" />
+          <option name="PATTERN" value="com.chenxianyu.newes.Service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Text" />
-      <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Text.UpdatePasswordServletTest" />
-      <option name="METHOD_NAME" value="doPost" />
+      <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Service" />
+      <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Service.ArticleServiceTest" />
+      <option name="METHOD_NAME" value="addNum" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArticleServiceTest.getAricleById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Newes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chenxianyu.newes.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Service" />
+      <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Service.ArticleServiceTest" />
+      <option name="METHOD_NAME" value="getAricleById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArticleServiceTest.getArticleList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Newes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chenxianyu.newes.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Service" />
+      <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Service.ArticleServiceTest" />
+      <option name="METHOD_NAME" value="getArticleList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -182,42 +231,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.getUserByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Newes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chenxianyu.newes.Text.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Text" />
-      <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Text.UserServiceTest" />
-      <option name="METHOD_NAME" value="getUserByUsername" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Text.test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Newes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chenxianyu.newes.Text.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chenxianyu.newes.Text" />
-      <option name="MAIN_CLASS_NAME" value="com.chenxianyu.newes.Text.Text" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 8.5.100" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.100" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/NewsList.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -307,20 +322,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ArticleServiceTest.addNum" />
+      <item itemvalue="JUnit.ArticleServiceTest.getArticleList" />
+      <item itemvalue="JUnit.ArticleServiceTest.getAricleById" />
       <item itemvalue="JUnit.UserServiceTest.deleteUser" />
       <item itemvalue="JUnit.ArcitleMapperImplTest.getArticleList" />
-      <item itemvalue="JUnit.UserServiceTest.getUserByUsername" />
-      <item itemvalue="JUnit.UpdatePasswordServletTest.doPost" />
-      <item itemvalue="TestNG.Text.test1" />
       <item itemvalue="Tomcat 服务器.Tomcat 8.5.100" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArticleServiceTest.getArticleList" />
+        <item itemvalue="JUnit.ArticleServiceTest.addNum" />
+        <item itemvalue="JUnit.ArticleServiceTest.getAricleById" />
         <item itemvalue="JUnit.UserServiceTest.deleteUser" />
         <item itemvalue="JUnit.ArcitleMapperImplTest.getArticleList" />
-        <item itemvalue="JUnit.UserServiceTest.getUserByUsername" />
-        <item itemvalue="JUnit.UpdatePasswordServletTest.doPost" />
-        <item itemvalue="TestNG.Text.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -362,7 +377,10 @@
       <workItem from="1718950757728" duration="4660000" />
       <workItem from="1718968365023" duration="10244000" />
       <workItem from="1719019707376" duration="8192000" />
-      <workItem from="1719042733571" duration="4400000" />
+      <workItem from="1719042733571" duration="4745000" />
+      <workItem from="1719129333212" duration="7000" />
+      <workItem from="1719129417614" duration="7000" />
+      <workItem from="1719129492388" duration="14737000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />
@@ -532,7 +550,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718804840647</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="最新版">
+      <option name="closed" value="true" />
+      <created>1719051034278</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1719051034278</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +597,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="修改信息" />
     <MESSAGE value="修改新闻，新闻管理，编辑新闻，删除新闻前端" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改新闻，新闻管理，编辑新闻，删除新闻前端" />
+    <MESSAGE value="最新版" />
+    <option name="LAST_COMMIT_MESSAGE" value="最新版" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -33,12 +33,12 @@
 <section>
     <div class="container">
         <h2>编辑新闻</h2>
-        <form class="news-form">
+        <form class="news-form" onsubmit="putNews(event)">
             <input type="text" name="title" placeholder="新闻标题" value="新闻标题1">
             <textarea name="summary" placeholder="新闻摘要"></textarea>
             <textarea name="content" placeholder="新闻内容"></textarea>
             <textarea name="type" placeholder="新闻类型"></textarea>
-            <button onclick="putNews()">保存更改</button>
+            <button type="submit">保存更改</button>
         </form>
     </div>
 </section>
@@ -60,7 +60,9 @@
 </script>
 <script>
     //提交新闻
-    function putNews(){
+    function putNews(event){
+        event.preventDefault(); // 阻止表单的默认提交行为
+
         let acticleId = localStorage.getItem("articleId")
         news = getNews();
         news.articleId = acticleId;
@@ -70,7 +72,7 @@
                 console.log(res);
                 if (res.data.code === 1){
                     alert('编辑成功');
-                    window.location.href = 'index.html';
+                    window.location.href = 'newsManagement.jsp';
                 }else {
                     alert('编辑失败');
                 }

@@ -128,10 +128,18 @@
 
                 // 更新当前页码显示
                 document.getElementById('currentPage').textContent = '当前页码：' + currentPage;
+                // 判断是否还有下一页的数据
+                if (newsList.length < pageSize) {
+                    // 如果返回的新闻数量小于每页的数量，说明没有下一页的数据
+                    document.getElementById('nextBtn').disabled = true;
+                } else {
+                    // 否则，还有下一页的数据
+                    document.getElementById('nextBtn').disabled = false;
+                }
             })
             .catch(err => {
                 console.error('获取新闻列表失败:', err);
-                // 可以在页面上显示错误信息或者进行其他处理
+                document.getElementById('nextBtn').disabled = true;
             });
     }
 
@@ -166,10 +174,13 @@
     });
 
     // 下一页按钮点击事件
+    // 下一页按钮点击事件
     document.getElementById('nextBtn').addEventListener('click', function() {
-        // 这里可以根据实际情况判断是否还有下一页数据
-        currentPage++;
-        getNewsList();
+        // 如果下一页按钮没有被禁用，就获取下一页的数据
+        if (!this.disabled) {
+            currentPage++;
+            getNewsList();
+        }
     });
 
     // 页面加载完成后立即获取新闻列表

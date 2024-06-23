@@ -82,4 +82,8 @@ public interface ArcitleMapper {
      * @return 返回文章列表
      */
     List<Article> getArticleListByKeyword(String keyword, int offset, int limit);
+
+    void addNum(int articleId);
+
+    List<Article> getTopFive();
 }

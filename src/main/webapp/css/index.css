@@ -277,3 +277,32 @@ body, html {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+.top-news-card {
+    position: absolute;
+    right: 165px; /* 设置卡片距离页面右侧的距离 */
+    top: 400px; /* 设置卡片距离页面顶部的距离，增加的距离是标题的高度加上它的下边距 */
+    width: 310px; /* 设置卡片的宽度 */
+    height: auto;
+    padding: 10px; /* 设置卡片的内边距 */
+    border: 2px solid #000;
+    border-radius: 15px;
+    background-color: #f9d342;
+    overflow: auto; /* 如果内容超出卡片大小，显示滚动条 */
+}
+
+.top-news-card h2 {
+    white-space: nowrap; /* 防止标题换行 */
+    overflow: hidden; /* 隐藏超出一行的标题 */
+    text-overflow: ellipsis; /* 显示省略号 */
+    margin: 10px 0; /* 添加上下边距 */
+}
+
+#topNewsTitle {
+    text-align: center; /* 设置标题居中 */
+    font-size: 24px; /* 设置标题的字体大小 */
+    color: #000; /* 设置���题的颜色 */
+    margin-bottom: 20px; /* 设置标题下方的边距 */
+    position: absolute; /* 设置标题的定位方式 */
+    top: 350px; /* 设置标题距离页面顶部的距离 */
+    width: 160%; /* 设置标题的宽度为100%，使其可以在页面中居中 */
+}

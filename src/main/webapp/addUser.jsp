@@ -32,19 +32,24 @@
 <section>
     <div class="container">
         <h2>新增用户</h2>
-        <form class="news-form">
+        <form class="news-form" onsubmit="putUser(event)">
             <input type="text" name="username" placeholder="用户名" required>
-            <textarea name="password" placeholder="姓名" required></textarea>
+            <textarea name="password" placeholder="密码" required></textarea>
             <textarea name="name" placeholder="姓名" required></textarea>
             <textarea name="age" placeholder="年龄" required></textarea>
             <textarea name="gender" placeholder="性别" required></textarea>
             <textarea name="phone" placeholder="手机" required></textarea>
-            <textarea name="爱好" placeholder="爱好" required></textarea>
+            <textarea name="like" placeholder="爱好" required></textarea>
             <textarea name="type" placeholder="类型" required></textarea>
-            <button onclick="putUser()">添加用户</button>
+            <button type="submit">添加用户</button>
         </form>
     </div>
 </section>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 用户管理系统</p>
+    </div>
+</footer>
 </body>
 <script>
     //获取新闻表单的值
@@ -60,14 +65,14 @@
         user.like = document.getElementsByName('like')[0].value;
         return user;
     }
-    //提交新闻
-    function putUser(){
+    function putUser(event){
+        event.preventDefault(); // 阻止表单的默认提交行为
+
         axios.post(api+'/addUser',getUser())
             .then(res=>{
                 console.log(res);
-                if (res.data.code===1){
-                    alert('添加成功')
-                    //返回上一页
+                if (res.data.code==1){
+                    alert("添加成功")
                     window.history.back();
                 }else{
                     alert('添加失败')

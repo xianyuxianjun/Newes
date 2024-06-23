@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 17967
-  Date: 2024/6/14
-  Time: 下午3:31
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
@@ -20,7 +13,7 @@
 <body>
 <div class="login-box">
     <h2>登录</h2>
-    <form>
+    <form onsubmit="login(event)">
         <div class="user-box">
             <input type="text" name="" required="">
             <label>用户名</label>
@@ -29,6 +22,12 @@
             <input type="password" name="" required="">
             <label>密码</label>
         </div>
+        <div class="user-box">
+            <input type="text" id="captchaInput" required="">
+            <label>验证码</label>
+        </div>
+        <div id="captchaDisplay"></div>
+        <button type="button" onclick="generateCaptcha()">生成新的验证码</button>
         <div class="button-box">
             <button onclick="login()">登录</button>
             <button type="button" class="register" onclick="register()">还没有账号？点击注册</button> <!-- 修改注册按钮 -->
@@ -37,31 +36,60 @@
 </div>
 </body>
 <script>
+    let captcha = '';
 
-</script>
-<script>
+    // 生成一个新的验证码
+    function generateCaptcha() {
+        captcha = '';
+        let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        for (let i = 0; i < 5; i++) {
+            captcha += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        document.getElementById('captchaDisplay').innerText = captcha;
+    }
+
+    // 验证输入的验证码是否正确
+    // 验证输入的验证码是否正确
+    function validateCaptcha() {
+        let input = document.getElementById('captchaInput').value.toLowerCase();
+        if (input !== captcha.toLowerCase()) {
+            alert('验证码错误');
+            return false;
+        }
+        return true;
+    }
+
     //跳转注册
     function register(){
         document.querySelector('.register').addEventListener('click',function(){
             window.location.href = 'register.jsp';
         })
     }
+
     //登录
     function login(){
-            let user={username:'',password:''};
-            user.username = document.querySelector('input[type="text"]').value;
-            user.password = document.querySelector('input[type="password"]').value;
-            axios.post(api+'/login',user).then(res => {
-                if (res.data.code === 1) {
-                    localStorage.setItem('userId', res.data.data.userId);
-                    alert('登录成功');
-                    window.location.href = 'index.jsp';
-                } else {
-                    alert('登录失败');
-                }
-            }).catch(err => {
-                console.log(err);
-            });
+        event.preventDefault(); // 阻止表单的默认提交行为
+        if (!validateCaptcha()) {
+            alert("验证码错误")
+            return;
+        }
+        let user={username:'',password:''};
+        user.username = document.querySelector('input[type="text"]').value;
+        user.password = document.querySelector('input[type="password"]').value;
+        axios.post(api+'/login',user).then(res => {
+            if (res.data.code === 1) {
+                localStorage.setItem('userId', res.data.data.userId);
+                alert('登录成功');
+                window.location.href='index.jsp'
+            } else {
+                alert('登录失败');
+            }
+        }).catch(err => {
+            console.log(err);
+        });
     }
+
+    // 页面加载时生成一个验证码
+    window.onload = generateCaptcha;
 </script>
 </html>

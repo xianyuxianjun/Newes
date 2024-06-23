@@ -26,7 +26,7 @@ public class ArcitleMapperImpl implements ArcitleMapper {
     @Override
     public Article getArticleById(int articleId) {
         try {
-            return queryRunner.query("SELECT * FROM articles WHERE article_id=?", new BeanHandler<>(Article.class),articleId);
+            return queryRunner.query("SELECT * FROM articles WHERE articleId=?", new BeanHandler<>(Article.class),articleId);
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
@@ -146,7 +146,35 @@ public class ArcitleMapperImpl implements ArcitleMapper {
     @Override
     public List<Article> getArticleListByKeyword(String keyword, int offset, int limit) {
         try {
-            return queryRunner.query("SELECT * FROM articles WHERE title LIKE ? OR summary LIKE ? OR content LIKE ? LIMIT ?,?", new BeanHandler<>(List.class), keyword, keyword, keyword, offset, limit);
+            String keywordLike = "%" + keyword + "%";
+            return queryRunner.query("SELECT * FROM articles WHERE title LIKE ? OR summary LIKE ? OR content LIKE ? LIMIT ?,?", new BeanListHandler<>(Article.class), keywordLike, keywordLike, keywordLike, offset, limit);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return List.of();
+        }
+    }
+
+    /**
+     * @param articleId
+     */
+    @Override
+    public void addNum(int articleId) {
+        try {
+            queryRunner.update("UPDATE articles SET num=num+1 WHERE articleId=?", articleId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+
+        }
+    }
+
+    /**
+     * @return
+     */
+    @Override
+    public List<Article> getTopFive() {
+       //查询num最大的五条记录;
+        try {
+            return queryRunner.query("SELECT * FROM articles ORDER BY num DESC LIMIT 5", new BeanListHandler<>(Article.class));
         } catch (SQLException e) {
             e.printStackTrace();
             return List.of();

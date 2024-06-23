@@ -65,4 +65,6 @@ public interface UserMapper {
     void updateAvatar(Integer userId, String filePath);
 
     List<User> getUserList(int offset, int limit);
+
+    int setAdmin(User user);
 }

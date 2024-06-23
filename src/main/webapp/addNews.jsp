@@ -32,12 +32,12 @@
 <section>
     <div class="container">
         <h2>新增新闻</h2>
-        <form class="news-form">
+        <form class="news-form" onsubmit="putNews(event)">
             <input type="text" name="title" placeholder="新闻标题" required>
             <textarea name="summary" placeholder="新闻摘要" required></textarea>
             <textarea name="content" placeholder="新闻内容" required></textarea>
             <textarea name="type" placeholder="type" required></textarea>
-            <button onclick="putNews()">发布新闻</button>
+            <button type="submit">发布新闻</button>
         </form>
     </div>
 </section>
@@ -57,18 +57,15 @@
         return news;
     }
     //提交新闻
-    function putNews(){
+    function putNews(event){
+        event.preventDefault(); // 阻止表单的默认提交行为
+
         axios.post(api+'/addNews',getNews())
-            .then(res=>{
-                console.log(res);
-            })
-            .catch(err=>{
-                console.log(err);
-            });axios.post(api+'/addNews',getNews())
             .then(res=>{
                 console.log(res);
                 if (res.data.code === 1){
                     alert('发布成功');
+                    window.location.href = 'newsManagement.jsp';
                 }else {
                     alert('发布失败');
                 }

@@ -187,4 +187,18 @@ public class UserMapperImpl implements UserMapper {
         }
     }
 
+    /**
+     * @param user
+     * @return
+     */
+    @Override
+    public int setAdmin(User user) {
+        try {
+            return queryRunner.update("UPDATE user SET type=1 WHERE userId=?", user.getUserId());
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
 }
