@@ -9,26 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="最新版">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/GetNewsServelet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/SearchNewsServLet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/SetAdminServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Contorller/TupFiveServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Pojo/KeywordDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/News.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/NewsList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/chenxianyu/newes/Service/ArticleServiceTest.java" afterDir="false" />
+    <list default="true" id="9012a03c-7227-470c-a368-dae6eb974aaa" name="更改" comment="第一期完结">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/news.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/newsList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/ArcitleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/ArcitleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/ArcitleMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/ArcitleMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/Impl/UserMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenxianyu/newes/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addNews.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editNews.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editNews.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/News.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/News.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/NewsList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/NewsList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/newsManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/newsManagement.jsp" afterDir="false" />
@@ -43,10 +29,10 @@
       <list>
         <option value="Interface" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="Jsp File" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -108,7 +94,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "F:/Newes/src/test/java",
-    "last_opened_file_path": "F:/Newes/src/main/webapp/NewsList.jsp",
+    "last_opened_file_path": "F:/Newes/src/main/webapp/login.jsp",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -232,7 +218,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.100" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.100" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/NewsList.jsp" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -380,7 +366,8 @@
       <workItem from="1719042733571" duration="4745000" />
       <workItem from="1719129333212" duration="7000" />
       <workItem from="1719129417614" duration="7000" />
-      <workItem from="1719129492388" duration="14737000" />
+      <workItem from="1719129492388" duration="14865000" />
+      <workItem from="1719190275201" duration="1938000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <option name="closed" value="true" />
@@ -558,7 +545,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719051034278</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="第一期完结">
+      <option name="closed" value="true" />
+      <created>1719149054540</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1719149054540</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +593,8 @@
     <MESSAGE value="修改信息" />
     <MESSAGE value="修改新闻，新闻管理，编辑新闻，删除新闻前端" />
     <MESSAGE value="最新版" />
-    <option name="LAST_COMMIT_MESSAGE" value="最新版" />
+    <MESSAGE value="第一期完结" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一期完结" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -13,58 +13,7 @@
     <title>新闻展示页面</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/config.js"></script>
-    <style>
-        .news-card {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .news-card:hover {
-            background-color: #f0f0f0;
-        }
-        nav {
-            background-color: #f0f0f0;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin-right: 15px;
-        }
-
-        nav form {
-            display: flex;
-            align-items: center;
-        }
-
-        nav input[type="text"] {
-            margin-right: 10px;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-
-        nav button {
-            padding: 5px 10px;
-            border: none;
-            border-radius: 3px;
-            background-color: #333;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        nav button:hover {
-            background-color: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/newsList.css">
 </head>
 <body>
 <nav>
@@ -82,7 +31,7 @@
         sousuo(event);
     }
     var currentPage = 1; // 当前页码
-    var pageSize = 10; // 每页显示条数
+    var pageSize = 100; // 每页显示条数
     var newsContainer = document.getElementById('newsContainer');
 
     // 获取新闻列表
@@ -112,7 +61,7 @@
                 '<p><strong>发布日期:</strong> ' + news.publishDate + '</p>' +
                 '<p><strong>分类:</strong> ' + news.category + '</p>';
 
-            // 添加点击事件，跳转到新闻详情页，假设详情页链接为 detail.html?id=<news_id>
+            // 添加点击事件，跳转到新闻详情页
             card.addEventListener('click', function() {
                 localStorage.setItem("newsId",news.articleId)
                 window.location.href ='News.jsp'

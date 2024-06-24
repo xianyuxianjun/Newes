@@ -42,7 +42,7 @@
     <p>尊敬的冒险家您好，欢迎您来到冒险岛，请问你有什么需要帮忙的吗？</p>
     <ul>
         <li><button onclick="toGL()">我是情报官，我要进入管理中心</button></li>
-        <li><a href="#">我想去浏览一些情报</a></li>
+        <li><a href="News.jsp">我想去浏览一些情报</a></li>
         <li><a href="#">我想去冒险岛广场聊聊天</a></li>
         <li><a href="user.jsp">我想去信息局修改我的身份信息</a></li>
     </ul>
@@ -100,7 +100,7 @@
             title.textContent = news.title;
             topNewsContainer.appendChild(title);
 
-            // 添加点击事件，跳转到新闻详情页，假设详情页链接为 detail.html?id=<news_id>
+            // 添加点击事件，跳转到新闻详情页
             title.addEventListener('click', function() {
                 localStorage.setItem("newsId",news.articleId)
                 window.location.href ='News.jsp'
@@ -112,7 +112,6 @@
     window.onload = function() {
         // 设置标题的文本
         document.getElementById('topNewsTitle').textContent = '本周热点';
-
         getTop5News().then(newsList => {
             renderTop5News(newsList);
         });

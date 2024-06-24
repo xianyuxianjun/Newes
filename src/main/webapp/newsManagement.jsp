@@ -153,7 +153,6 @@
             })
             .catch(err => {
                 console.error('删除新闻失败:', err);
-                // 可以在页面上显示删除失败的提示或者进行其他处理
             });
     }
 
@@ -173,7 +172,6 @@
         }
     });
 
-    // 下一页按钮点击事件
     // 下一页按钮点击事件
     document.getElementById('nextBtn').addEventListener('click', function() {
         // 如果下一页按钮没有被禁用，就获取下一页的数据

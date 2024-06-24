@@ -49,7 +49,6 @@
     }
 
     // 验证输入的验证码是否正确
-    // 验证输入的验证码是否正确
     function validateCaptcha() {
         let input = document.getElementById('captchaInput').value.toLowerCase();
         if (input !== captcha.toLowerCase()) {
